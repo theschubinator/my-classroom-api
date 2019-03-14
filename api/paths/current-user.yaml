@@ -1,0 +1,10 @@
+/current-user:
+  get:
+    description: user
+    tags:
+      - current-user
+    responses:
+      '200':
+        description: containing the user
+        schema:
+          $ref: '../definitions/current-user.yaml'

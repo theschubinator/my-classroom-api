@@ -1,0 +1,11 @@
+swagger: '2.0'
+info:
+  title: 'Swagger'
+  description: 'A Test Swagger App'
+  version: '1.0'
+basePath: /api
+tags:
+  - name: current-user
+    description: Everything about the current user
+paths:
+  $ref: './paths/current-user.yaml'
