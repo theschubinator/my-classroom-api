@@ -26,13 +26,15 @@ function serveSwaggerUI(server) {
     });
 }
 
+const noOp = () => null;
+
 module.exports = () => {
     const server = Hapi.Server({
         host: '0.0.0.0',
         port: 8000
     });
 
-    return async (callback) => {
+    return async (callback = noOp) => {
 
         try {
             await server.register(require('inert'));

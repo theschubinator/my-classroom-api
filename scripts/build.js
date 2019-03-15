@@ -2,4 +2,8 @@
 
 const buildApi = require('./helpers/build-api');
 
-buildApi();
+buildApi()
+
+module.exports = async () => {
+    await buildApi();
+}

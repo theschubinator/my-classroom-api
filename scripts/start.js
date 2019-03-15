@@ -17,3 +17,7 @@ function rebuildBundleOnChanges() {
 const server = createPreviewServer();
 
 server(rebuildBundleOnChanges)
+
+module.exports = () => {
+    server(rebuildBundleOnChanges)
+}
