@@ -1,7 +1,7 @@
 {
-  "name": "swagger",
+  "name": "my-classroom-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "The official api for my-classroom",
   "main": "index.js",
   "scripts": {
     "verify": "node scripts/verify",

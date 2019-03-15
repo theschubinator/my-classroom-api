@@ -1,16 +1,15 @@
 'use strict';
 
-var path = require('path');
+const path = require('path');
 
-var appRoot = __dirname,
-    distDirectory = path.join(appRoot, 'dist');
+const appRoot = __dirname;
+const distDirectory = path.join(appRoot, 'dist');
 
 module.exports = Object.freeze({
     apiFilepath: path.join(appRoot, 'api', 'api.yaml'),
     appRoot,
     distDirectory,
-    apiBundledPath: path.join(distDirectory, 'api', 'bundled.yaml'),
-    apiDereferencedPath: path.join(distDirectory, 'api', 'dereferenced.yaml'),
+    apiBundledPath: path.join(distDirectory, 'api', 'api.yaml'),
     dataPath: path.join(appRoot, 'data'),
-    handlersPath: path.join(appRoot, './handlers')
+    handlersPath: path.join(appRoot, 'handlers')
 });

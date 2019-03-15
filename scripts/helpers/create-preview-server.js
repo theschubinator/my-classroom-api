@@ -2,8 +2,6 @@ const Hapi = require('hapi');
 const config = require('../../config');
 const swaggerUiAssetPath = require('swagger-ui-dist').getAbsoluteFSPath();
 const chalk = require('chalk');
-const path = require('path');
-const schemaFaker = require('json-schema-faker');
 
 function serveBundledApi(server) {
     server.route({
@@ -28,7 +26,7 @@ function serveSwaggerUI(server) {
     });
 }
 
-module.exports = function () {
+module.exports = () => {
     const server = Hapi.Server({
         host: '0.0.0.0',
         port: 8000
@@ -45,7 +43,7 @@ module.exports = function () {
             await server.register({
                 plugin: require('hapi-openapi'),
                 options: {
-                    api: config.apiDereferencedPath,
+                    api: config.apiBundledPath,
                     handlers: config.handlersPath,
                     cors: true
                 }
