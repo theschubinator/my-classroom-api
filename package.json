@@ -1,6 +1,6 @@
 {
   "name": "my-classroom-api",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "The official api for my-classroom",
   "main": "index.js",
   "scripts": {
