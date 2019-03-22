@@ -1,2 +1,4 @@
 /current-user:
   $ref: './user/current-user.yaml'
+/classes/new:
+  $ref: './classes/new.yaml'

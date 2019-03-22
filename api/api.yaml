@@ -6,6 +6,8 @@ info:
 basePath: /api
 paths:
   $ref: './paths/index.yaml'
+definitions:
+  $ref: './definitions/index.yaml'
 tags:
   - name: User
     description: Everything about an User
