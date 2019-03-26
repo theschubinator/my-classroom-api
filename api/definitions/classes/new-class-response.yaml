@@ -1,0 +1,13 @@
+type: object
+description: the payload sent to create a new class
+required:
+  - id
+  - name
+  - subject
+properties:
+  id:
+    type: string
+  name:
+    type: string
+  subject:
+    type: string

@@ -1,0 +1,16 @@
+post:
+  description: Request to add a new class to the current user
+  tags:
+    - Class
+  parameters:
+    - name: payload
+      in: body
+      description: payload for a new class
+      required: true
+      schema:
+        $ref: '../../definitions/classes/new-class-payload.yaml'
+  responses:
+    '200':
+      description: The response of a successfully created class
+      schema:
+        $ref: '../../definitions/classes/new-class-response.yaml'
